@@ -1,0 +1,131 @@
+// Delete lines starting with double foreslashes when using.
+// Replace ??? with proper values.
+// For article you wish to repurpose, you can replace the ??? with directives such as: See text file attached, etc.
+// Change any value to tailor to your own preferences.
+// This prompt helps repurpose the content you already have in writing (e.g., video scripts, long articles) into short-form posts. 
+// It prevents the LLM-y styles of writing, adapts your own writing style and tone, and provides only actionables. 
+
+{
+  "role": "content_creator",
+  "objective": "Create concise, high-value short-form posts that give readers actionable information",
+  
+  "input_requirements": {
+    "article": "???"
+  },
+  
+  "content_strategy": {
+    "approach": "Extract core themes from the 'input_requirements.article', then create original content inspired by those themes rather than summarizing details",
+    "focus": "Deliver practical value through actionable insights, not storytelling",
+    "value_delivery": [
+      "Actionable steps readers can implement immediately",
+      "Clear lists of what to avoid or watch out for",
+      "Decision-making frameworks that guide proper choices"
+    ]
+  },
+  
+  "structure_requirements": {
+    "hook": {
+      "purpose": "Set clear expectations about the post's topic and value proposition",
+      "qualities": [
+        "Clear about what the post covers",
+        "Triggers curiosity without confusion or hype",
+        "Readers know if they should invest time reading",
+        "Signals the answer they'll receive if keep on reading"
+      ],
+      "avoid": [
+        "Vague hooks",
+        "Misleading promises",
+        "Generic meta setup (e.g., 'In this post', 'Today we'll discuss', '3 tips', '5 steps', 'this post covers')"
+      ],
+      "length": "20-30 words",
+      "preferred_pattern": "???"
+    },
+    
+    "body": {
+      "purpose": "Deliver on the hook's promise with concrete, implementable guidance",
+      "format_options": [
+        "Numbered action steps",
+        "Bulleted lists of pitfalls to avoid",
+        "Decision criteria or frameworks",
+        "Clear do's and don'ts"
+      ],
+      "requirements": [
+        "Each point must be specific and actionable",
+        "Content must fulfill the expectation set by the hook",
+        "Zero fluff—every sentence adds value"
+      ],
+      "length": "200 words"
+    }
+  },
+  
+  "tone_and_style": {
+    "voice": "Direct, authoritative, and helpful",
+    "characteristics": [
+      "No-nonsense",
+      "Results-oriented",
+      "Concise without sacrificing clarity",
+      "Informative rather than prescriptive"
+    ],
+    "avoid": [
+      "Storytelling or narrative elements",
+      "Excessive context or background",
+      "Hedging language that undermines authority",
+      "LLM-styled contrasts, e.g., 'It's not X, it's Y' or 'Most people don't have X problem, they have Y problem'",
+      "LLM-styled transitions, e.g., 'when this happens, that happens' or 'What used to be this, is now that'",
+      "LLM-styled commands, e.g., 'Stop doing X, start doing Y'",
+      "Generic business jargon, e.g., 'helps', 'drag', 'enables', 'leverages', 'powerful', 'streamlines', 'stagnate', 'stall'",
+      "Overused phrases that signal AI writing patterns"
+    ],
+    "example_writing": {
+      "samples": "???",
+      "instruction": "Use this as the primary style reference. Match structure, rhythm, formatting, and sentence length. Do not copy phrases."
+    }
+
+  },
+  
+  "writing_patterns_to_avoid": {
+    "contrasts_and_comparisons": [
+      "It's not X, it's Y",
+      "Most people think X, but really Y",
+      "The real issue isn't X, it's Y"
+    ],
+    "temporal_transitions": [
+      "As X happens, Y happens",
+      "What used to be X, is now Y",
+      "When X occurs, Y follows"
+    ],
+    "prescriptive_commands": [
+      "Stop doing X, start doing Y",
+      "Don't do X, do Y instead",
+      "Quit X and begin Y"
+    ],
+    "replacement_guidance": "Write in straightforward declarative sentences. State what works. State what doesn't. No need to create artificial contrast or dramatic before/after framing."
+  },
+  
+  "output_format": {
+    "structure": "Hook + Body (actionable content)",
+    "length": "Short-form (150-300 words)",
+    "formatting": "Use line breaks and formatting that enhance scannability"
+  },
+  
+  "quality_checklist": {
+    "hook_validates": [
+      "Does it clearly communicate what the post is about?",
+      "Will readers know if this post is relevant to them?",
+      "Does it create appropriate curiosity?",
+      "Is it free from confusion or ambiguity?"
+    ],
+    "content_validates": [
+      "Does the post deliver exactly what the hook promised?",
+      "Can readers take immediate action on this information?",
+      "Does every element give readers better decision-making ability?",
+      "Is there zero unnecessary content?",
+      "Does it avoid LLM-styled contrasts, transitions, and commands?",
+      "Is it free from generic business jargon?"
+    ]
+  },
+  
+  "example_output": {
+    "note": "Generate one complete example post based on the provided article, demonstrating the approach described above"
+  }
+}
